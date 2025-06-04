@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>常見問題｜飛躍學院</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: auto;
+      padding: 60px 30px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .faq-item {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .faq-item h3 {
+      margin: 0;
+      font-size: 1.1em;
+    }
+
+    .faq-answer {
+      margin-top: 15px;
+      display: none;
+      color: #444;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>飛躍學院</strong></div>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="register.html">報名</a>
+      <a href="courses.html">課程總覽</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <div class="section">
+    <h2>常見問題</h2>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <h3>📅 課程多久開一班？</h3>
+      <div class="faq-answer">每月開設新班，報名人數達 6 人即開課。</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <h3>💵 是否可分期付款？</h3>
+      <div class="faq-answer">可，報名前可來電洽詢，學費最多可分三期。</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <h3>📚 課程包含教材嗎？</h3>
+      <div class="faq-answer">包含專屬講義與線上題庫，部分課程提供實體教材。</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <h3>🏠 是否有線上課程？</h3>
+      <div class="faq-answer">部分課程提供線上同步教學或影片課程，詳見各班說明。</div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 飛躍學院 All rights reserved.
+  </footer>
+
+  <script>
+    function toggleAnswer(item) {
+      const answer = item.querySelector('.faq-answer');
+      answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
